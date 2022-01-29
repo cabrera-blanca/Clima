@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+    <!--FontAwsome-->
+    <script src="https://kit.fontawesome.com/2b9f7eac64.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Clima</title>
+</head>
+<body>
+    <main>
+        <!--Buscador de Ciudades-->
+        <div class="search-form">
+            <form class="search-form" id="search-form">
+                <div class="searchbox">
+                    <input type="text" class="search" id="searchbox" autocomplete="off" placeholder="BUSCAR CIUDAD...">
+                </div>
+            </form>
+        </div>
+        <!--Tarjeta Clima-->
+        <div class="temp-card">
+            <div class="city" id="city">Lima, PE</div>
+            <div class="date" id="date">29/01/2022</div>
+            <div class="temperature">
+                <img src="/media/img/calor.png" id="temp-img"class="temp-img" alt="">
+                <div  class="temp" id="temp">14C</div>
+            </div>
+            <div class="weather" id="weather">Sol</div>
+            <div class="min-max">MIN | MAX</div>
+            <div class="range" id="range">14 | 16</div>
+        </div>
+    </main>
+    <!--Footer-->
+    
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave"id="wave2"></div>
+            <div class="wave"id="wave3"></div>
+            <div class="wave"id="wave4"></div>
+        </div>
+        <ul class="social">
+            <li><a href="#"><i class="fab fa-github fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+        </ul>
+        <p> &copy; All Rights Reserved  |   Design by <a href="#">Lucia Cabrera</a></p>
+    </footer>
+
+    <!--JS-->
+    <script src="/js/main.js"></script>
+</body>
+</html>

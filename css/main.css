@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto , sans-serif;
+    font-weight: 700;
+}
+
+:root{
+    --bg-color:#2c2c2c;
+    --text-color:#f3f6f5;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+main{
+    margin-bottom: 10px;
+}
+
+
+/*CLIMA*/
+
+.searchbox{
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.search{
+    width: 100%;
+    background-color: var(--text-color);
+    border: none;
+    font-size: 1 rem;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.search-form{
+    margin: 20px 20px ;
+}
+
+.temp-card{
+    margin: 30px auto;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 20px;
+    text-align: center;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.city{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom:0.5rem ;
+}
+
+.date{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.temperature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.temperature .temp-img{
+    width: 150px;
+}
+
+.temp{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.weather{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+
+}
+
+
+/*FOOTER ANIMADO*/
+
+footer{
+    width: 100%;
+    background-color: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    position: sticky;
+    margin-top: 600px;
+}
+
+footer .social{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  auto ;
+    flex-wrap: wrap;
+}
+
+ul{
+    padding: 0;
+    justify-content: center;
+}
+
+footer .social li {
+    list-style: none;
+    color: black;
+}
+
+footer .social li a {
+    color: white;
+    margin : 0 10px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+footer .social li a:hover{
+    transform: translateY(-10px);
+    
+}
+
+footer p{
+    color: white;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+footer p a {
+    color: white;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(/media/img/wave.png);
+    background-size: 1000px 100px ;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 1.5s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 8px;
+    animation: animateWaves2 2s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 9px;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 10px;
+    animation: animateWaves2 3s linear infinite;
+}
+
+@keyframes animatewave {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 10px;
+    }
+
+}
+
+@keyframes animateWaves2{
+    0%{
+        background-position-x: 50px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+
+}
